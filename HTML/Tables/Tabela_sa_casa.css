@@ -1,0 +1,23 @@
+#one tr:nth-child(3) {
+    background-color: yellow;
+}
+table, table th, table td {
+    border: 1px solid gray;
+    border-collapse: collapse;
+}
+#one tr:nth-child(odd) {
+    font-style: italic;
+}
+
+#two tr td:nth-child(3),
+#two tr th:nth-child(3) {
+    background-color: yellow;
+}
+
+#two tr:nth-child(even):hover {
+    background-color: red;
+}
+
+#two tr:nth-child(even):hover td:nth-child(3) {
+    background-color: red;
+}

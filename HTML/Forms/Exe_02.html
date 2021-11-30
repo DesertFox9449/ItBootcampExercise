@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exe02</title>
+    <link rel="stylesheet" href="Exe_02.css">
+</head>
+<body>
+    <form action="">
+        <!-- Fieldset 1 -->
+        <fieldset>
+
+
+            <legend>Login details</legend>
+
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name">
+            </div>
+
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email">
+            </div>
+            
+            <div>
+                <label for="password">Password:</label>
+                <input type="password" name="password" id="password">
+            </div>
+
+
+        </fieldset>
+        
+        <!-- Fieldset 2 -->
+
+        <fieldset>
+
+            <legend>Your feedback</legend>
+
+
+            <p>Please check all the emotions that apply to you:</p>
+            
+            <!-- Checkbox -->
+            
+            <div id="checkbox">
+
+                <div>
+                    <label for="angry">Angry</label>
+                    <input type="checkbox" name="emotions" id="angry" value="angry">
+                </div>
+
+                <div>
+                    <label for="sad">Sad</label>
+                    <input type="checkbox" name="emotions" id="sad" value="sad">
+                </div>
+
+                <div>
+                    <label for="happy">Happy</label>
+                    <input type="checkbox" name="emotions" id="happy" value="happy">
+                </div>
+
+                <div>
+                    <label for="ambivalent">Ambivalent</label>
+                    <input type="checkbox" name="emotions" id="ambivalent" value="ambivalent">
+                </div>
+
+            </div>
+
+            <!-- Radio -->
+
+            <p>How satisfied are you with our service?</p>
+
+            <div id="radio">
+
+
+                <div>
+                    <label for="verySat">Very satisfied</label>
+                    <input type="radio" name="satisfaction" id="verySat" value="verySat">
+                </div>
+
+                <div>
+                    <label for="sat">Satisfied</label>
+                    <input type="radio" name="satisfaction" id="sat" value="sat">
+                </div>
+
+                <div>
+                    <label for="noCare">Didn't care</label>
+                    <input type="radio" name="satisfaction" id="noCare" value="noCare">
+                </div>
+
+                <div>
+                    <label for="disSat">Very satisfied</label>
+                    <input type="radio" name="satisfaction" id="disSat" value="disSat">
+                </div>
+
+                <div>
+                    <label for="veryDis">Very satisfied</label>
+                    <input type="radio" name="satisfaction" id="veryDis" value="veryDis">
+                </div>
+
+
+            </div>
+
+            <!-- Comment -->
+
+            <div>
+                <label for="comment">Further comments:</label>
+                <textarea name="comment" id="comment" cols="30" rows="5"></textarea>
+            </div>
+
+
+
+        </fieldset>
+
+        <!-- Final part -->
+
+        <div id="bottom">  
+
+
+            <div>
+                <label for="file">Bio photo:</label>
+                <input type="file" name="file" id="file">
+            </div>
+
+            <div>
+                <select name="" id="">
+                    <option value="">Select location</option>
+                    <option value="New York">New York</option>
+                    <option value="London">London</option>
+                    <option value="Washington DC">Washington DC</option>
+                    <option value="Paris">Paris</option>
+                    <option value="Belgrade">Belgrade</option>
+                </select>
+            </div>
+
+            <div>
+                <input type="submit" value="Submit">
+            </div>
+
+            <div>
+                <input type="reset" value="Reset">
+            </div>
+
+
+        </div>      
+    </form>
+    
+</body>
+</html>

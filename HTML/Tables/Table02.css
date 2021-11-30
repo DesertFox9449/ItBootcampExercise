@@ -1,0 +1,64 @@
+/* table tr:nth-child(3) th:first-child  {
+    writing-mode: vertical-lr;
+} */
+table {
+    display: inline-block;
+}
+table, td, th {
+    border: 1px solid black;
+    
+}
+
+#one {
+    height: 326px;
+    margin-right: 0px;
+    padding-right: 0px;
+    border-right: none;
+    
+}
+#one th {
+    width: 20px;
+}
+#one tr:first-child th {
+    height: 80px;
+}
+#one tr:not(#one tr:first-child) th {
+    border: none;
+}
+
+#one tr th:last-child:not(#one tr:last-child th){
+    height: 48px;
+    border: 1px solid black;
+    
+}
+
+#one tr:first-child th:last-child {
+    border-left:none;
+    border-collapse: collapse;
+    
+}
+#one tr:first-child th:first-child {
+    border-right: none;
+}
+
+#two {
+    height: 326px;
+    margin-left: 0px;
+    padding-left: 0px;
+    width: 450px;
+    position: absolute;
+    border-left: none;
+    
+}
+
+#two tr td {
+    height: 48px;
+    width: 90px;
+}
+#two tr th {
+    height: 21.5px;
+}
+#two tr th:first-child, 
+#two tr th:first-child {
+    border-left: none;
+}

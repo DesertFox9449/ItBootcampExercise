@@ -1,0 +1,23 @@
+form {
+    width: 500px;
+    margin: auto;
+}
+form fieldset {
+    border:none;
+}
+div label {
+    width: 100%;
+    
+    /* outline: 5px solid orange; */
+}
+div {
+    margin-top: 10px;
+}
+
+#submit {
+    width: 100px;
+    height: 30px;
+    background-color: rgb(22, 170, 22);
+    color:#fff;
+    border: none;
+}

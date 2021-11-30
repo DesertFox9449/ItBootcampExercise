@@ -1,0 +1,10 @@
+label:not(.not) {
+    display: inline-block;
+    width: 150px;
+
+}
+#sub {
+    margin-left: 152px;
+    width: 100px;
+    height: 30px;
+}

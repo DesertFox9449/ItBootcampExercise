@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exe03</title>
+    <link rel="stylesheet" href="Exe03.css">
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <h1>Your payment number</h1>
+
+            <div>
+                <label for="name">NAME</label>
+            </div>
+            <div>
+                <input type="text" name="name" id="name" placeholder="John Doe">
+            </div> 
+
+            <div>
+                <label for="number">CARD NUMBER</label>
+            </div>
+            <div>
+                
+                <input type="tel" name="number" id="number" inputmode="numeric" pattern="[0-9\s]{13,19}" autocomplete="cc-number" maxlength="19" placeholder="&#128179;  xxxx-xxxx-xxxx-xxxx">
+            </div>
+
+            <div>
+                <label for="exDate">EXPIRATION DATE</label>
+            </div>
+            <div>
+                <input type="number" name="date" id="exDate" placeholder="MM" maxlength="2" minlength="2" inputmode="numeric">
+                <input type="number" name="date" id="exDate" placeholder="YY" maxlength="4" minlength="4" inputmode="numeric">
+            </div>
+
+            <div>
+                <label for="cvc">CVC</label>
+                
+            </div>
+
+            <div>
+                <input type="number" name="cvc" id="cvc" placeholder="123" maxlength="3" minlength="3" inputmode="numeric">
+            </div>
+            <div>
+                <input type="checkbox" name="save" id="save" value="yes" checked>
+                <label for="save">Save my card for future purchases</label>
+            </div>
+            
+            <div>
+                <input id="submit" type="submit" value="PAY NOW">
+            </div>
+        </fieldset>
+    </form>
+    
+</body>
+</html>

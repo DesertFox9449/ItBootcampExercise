@@ -1,0 +1,32 @@
+form {
+    width: 400px;
+    margin: auto;
+    
+}
+form fieldset {
+    border: 2px solid indigo;
+}
+form fieldset p {
+    color: #777;
+}
+form fieldset div, h1, p{
+    margin: 10px;
+}
+form fieldset div input {
+    padding: 5px 5px;
+}
+form fieldset div input:not(#submit) {
+    width: 80%;
+}
+
+form fieldset div #submit {
+    background-color: rgb(184, 69, 184);
+    color: #fff;
+    border: none;
+    width: 100px;
+    height: 30px;
+}
+
+form fieldset div a, form fieldset h1 {
+    color: indigo;
+}

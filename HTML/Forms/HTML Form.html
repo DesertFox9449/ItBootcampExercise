@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form</title>
+</head>
+
+<body>
+    <a href="Forms_css.html">Go back!</a>
+    <!--Put everything in a FORM tag
+        NoValidate - turn off HTML validation 
+        ex: required, type="email", min/max attributes...
+    -->
+    <form action="Storage.html" method="get" novalidate enctype="multipart/form-data">
+        <!--Text data    
+        REQUIRED - must do attribute
+        MINlenght
+        MAXlenght
+        AUTOcomplete="on/off" -->
+        <fieldset>
+            <legend>
+                <h3>Your Personal Data</h3>
+            </legend>
+            <div>
+                <label for="fname">First Name:</label>
+                <input type="text" id="fname" name="fname" placeholder="Your first name" required minlenght="4"
+                    maxlength="10">
+            </div>
+            <div>
+                <label for="lname">Last Name:</label>
+                <input type="text" id="lname" name="lname" placeholder="Your last name" required autocomplete="on">
+            </div>
+            <!--Password    
+        PLACEHOLDER - takes place before the data-->
+            <div>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="at least 8 characters with numerals"
+                    required>
+            </div>
+            <!--Email-->
+            <div>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="Your E-mail" required>
+            </div>
+            <!--Number data 
+        watch for MIN/MAX and step="5" min=:13" (13+5+5+5...)
+        -->
+            <div>
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" placeholder="15" required min="13" step="5">
+            </div>
+            <!--Date watch for MIN/MAX value-->
+            <div>
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" max="2008-01-01">
+            </div>
+            <div>
+                <br>
+                <input type="submit" value="Submit">
+            </div>
+        </fieldset>
+        <br>
+        <hr>
+        <br>
+        <!--Checkbox data-->
+        <div>
+            <h3>Favorite Food</h3>
+            <label for="banana">Banana:</label>
+            <input type="checkbox" id="banana" name="banana">
+
+        </div>
+
+        <div>
+
+            <label for="orange">Orange:</label>
+            <input type="checkbox" id="orange" name="orange">
+
+        </div>
+
+        <div>
+
+            <label for="apple">Apple:</label>
+            <input type="checkbox" id="apple" name="apple">
+
+        </div>
+        <br>
+        <hr>
+        <!--Radio data- if you need only 1 from multiple options. 
+            Pay extra attention to NAME. 
+            Name should be the same for all inputs, but VALUE is unique.-->
+        <div>
+            <h3>Your Gender</h3>
+            <label for="male">Male:</label>
+            <input type="radio" id="male" name="gender" value="male">
+        </div>
+        <div>
+            <label for="female">Female:</label>
+            <input type="radio" id="female" name="gender" value="female">
+        </div>
+        <br>
+        <hr>
+        <!--Select and Option to make a choice from a list of options. 
+            You CAN'T write YOUR OWN ANSWER
+            Pay attention to MULTIPLE that allows you to select more than one-->
+        <div>
+            <!--No need for INPUT tag
+                SELECTED to highlight an idem
+                The first one is highlighted by default-->
+            <label for="hairColor">Hair Color:</label>
+            <!--multiple-->
+            <select name="hairColor" id="hairColor" size="1">
+                <!--size="2"   to se specific number of list items-->
+                <!--OPTgroup works only with SELECT not with DATAlist-->
+                <optgroup label="Good Colors">
+                    <option value="Green">Green</option>
+                    <option value="Blue">Blue</option>
+                    <option value="Red" selected>Red</option>
+                </optgroup>
+                <optgroup label="Bad Colors">
+                    <option value="Orange">Orange</option>
+                    <option value="Pink" selected>Pink</option>
+                </optgroup>
+            </select>
+        </div>
+        <hr>
+        <br>
+        <!--TextArea- allows you to write long texts-->
+        <div>
+            <!--No need for INPUT tag-->
+            <label for="bio">Bio:</label>
+            <!--row and cols   initial size of the box
+            or style="width:200px; height:600px
+            or use CSS
+            -->
+            <textarea id="bio" name="bio" rows="10" cols="25"></textarea>
+        </div>
+        <br>
+        <hr>
+        <br>
+        <!--File allows you to upload a file. Pay attention to 
+        <form action="Storage.html" method="get" enctype="multipart/form-data">
+            enctype="multipart/form-data" 
+        -->
+        <div>
+            <label for="file">Upload a file:</label>
+            <input type="file" id="file" name="file">
+        </div>
+        <hr>
+        <br>
+        <!--Phone-->
+        <div>
+            <label for="phone">Phone:+381</label>
+            <input type="tel" id="phone" name="phone" pattern="[6][0-9]-[0-9]{4}-[0-9]{3}">
+            <p>It should look like this: 60-6268-514</p>
+            <button type="submit">Submit</button>
+        </div>
+        <br>
+        <hr>
+        <br>
+        <!--URL-->
+        <div>
+            <label for="url">URL:</label>
+            <input type="url" id="url" name="url">
+        </div>
+        <br>
+        <hr>
+        <br>
+        <!--Color-->
+        <div>
+            <label for="color">Color:</label>
+            <input type="color" id="color" name="color">
+        </div>
+        <br>
+        <hr>
+        <br>
+        <div>
+            <!--Button to reset and submit-->
+            <!--It's better to use BUTTON than 
+                <input type="submit" value="submit">
+                you can press ENTER
+            -->
+            <button type="reset">Reset</button>
+            <button type="submit">Click me</button>
+        </div>
+
+
+        <br>
+        <hr>
+        <br>
+        <div>
+            <!--Whit DATAlist you can select suggested options 
+            or chose to WRITE YOUR OWN-->
+            <label for="browser">Select:</label>
+            <input list="browsers" id="browser" name="browsers">
+            <datalist id="browsers">
+                <option value="Chrome"></option>
+                <option value="FireFox"></option>
+                <option value="Opera"></option>
+                <option value="DuckDuckGo"></option>
+                <option value="Safari"></option>
+                <option value="IE"></option>
+                <option value="Edge"></option>
+                <option value="Amusing"></option>
+                <option value="OP"></option>
+            </datalist>
+            <button type="submit">Ovde</button>
+        </div>
+
+        <div>
+            <label for="img">Your Image:</label>
+            <input type="text" name="img" id="img"><br>
+            <input type="image" id="img" name="img" alt="Login" src="Images/Paradice3.jpg" style="width:100px;">
+        </div>
+
+        <div>
+
+            <input type="range" min="-2" max="32" name="volume" id="volume">
+            <label for="volume">Volume</label>
+        </div>
+        <div>
+            <label for="wsearch">Search Our Website</label>
+            <input type="search" name="wsearch" id="wsearch" aria-label="Search through site content" spellcheck="true">
+            <button type="submit">Search</button>
+        </div>
+        <div>
+            <!--Dates-->
+            <pre>
+            <input type="date">
+            <input type="datetime-local">
+            <input type="month">
+            <input type="time">
+            <input type="week">
+            </pre>
+        </div>
+    </form>
+
+    <section name="country" id="country">
+        <option value="Australia">Australia</option>
+        <option value="Canada">Canada</option>
+        <option value="USA">USA</option>
+
+    </section>
+</body>
+
+</html>

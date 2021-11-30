@@ -1,0 +1,166 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+[class*="col-"] {
+    width: 100%;
+}
+
+header, footer {
+    background-color: aqua;
+    
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+header {
+    position: fixed;
+    width: 100%;
+    top:0;
+}
+h1{
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 2.3em;
+    
+}
+.top{
+    margin-top: 63px;
+    /* outline: 2px solid red; */
+}
+h2 {
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 1.8em;
+}
+aside {
+    background-color: aquamarine;
+}
+article {
+    background-image: linear-gradient(aquamarine, #fff);
+
+}
+section div:first-child a {
+    display: block;
+    background-image: url(SLIKE/slika2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 320px;
+    
+}
+section div:nth-child(2) a {
+    display: block;
+    background-image: url(SLIKE/slika1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 320px;
+    
+}
+section div:last-child a {
+    display: block;
+    background-image: url(SLIKE/slika3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 320px;
+    
+}
+
+.last{
+    background-image: linear-gradient(aquamarine, #fff);
+    
+}
+
+.last h3 {
+    text-align: center;
+    font-size: 1.6em;
+}
+.last {
+    margin-bottom: 65px;
+}
+p {
+    text-align: center;
+    font-size: 1.3em;
+}
+section aside a {
+    text-decoration: none;
+    color: #000;
+}
+
+@media only screen and (min-width: 700px) {
+    .col-1 {
+        width: 8.33%;
+    }
+    .col-2 {
+        width: 16.66%;
+    }
+    .col-3 {
+        width: 25%;
+    }
+    .col-4 {
+        width: 33.33%;
+    }
+    .col-5 {
+        width: 41.66%;
+    }
+    .col-6 {
+        width: 50%;
+    }
+    .col-7 {
+        width: 58.33%;
+    }
+    .col-8 {
+        width: 66.66%;
+    }
+    .col-9 {
+        width: 75%;
+    }
+    .col-10 {
+        width: 83.33%;
+    }
+    .col-11 {
+        width: 91.66%;
+    }
+    .col-12 {
+        width: 100%;
+    }
+    [class*="col-"] {
+        float: left;
+    }
+    .paragrafi1 {
+        height: 150px;
+        
+    }
+    
+    .row::after{
+        content: "";
+        clear: both;
+        display: table;
+    }
+    p {
+        padding-top: 18px;
+        text-align: left;
+        padding-left: 10px;
+    }
+    .last div h3 {
+        text-align: left;
+        padding: 20px 10px;
+    }
+    
+    
+    section div:first-child a,
+    section div:nth-child(2) a,
+    section div:last-child a
+     {
+       
+        height: 500px;
+        
+    }
+     
+}

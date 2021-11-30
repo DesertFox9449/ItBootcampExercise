@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="VEZBA_4.css">
+</head>
+<body>
+    <header class="row">
+        <h1>Air SERBIA</h1>
+    </header>
+
+    <!--               NAV                -->
+
+    <nav class="row">
+
+        <ul>
+            <li class="logo col-2">
+                <a href="">
+                    <img src="SLIKE/airserbia.png" alt="">
+                </a>
+            </li>
+
+            <li class="col-1">
+
+                <a href="">Letovi</a>
+
+            </li>
+
+            <li class="col-1">
+
+                <a href="">Destinacije</a>
+
+            </li>
+
+            <li class="col-1">
+
+                <a href="">Informacije</a>
+
+            </li>
+
+            <li class="col-1">
+
+                <a href="">Kontakt</a>
+
+            </li>
+        </ul>
+
+    </nav>
+
+    <!--           ARTICLE            -->
+    <article class="row">
+        <div class="ld col-5">
+            <h3 class="col-1">Letovi</h3>
+            <img class="col-7" src="slike/letovi.jpg" alt="">
+        </div>
+
+        <div class="ld col-5">
+            <h3 class="col-1">Destinacije</h3>
+            <img class="col-7" src="slike/destinacije.jpg" alt="">
+        </div>
+    </article>
+
+    <!--            SECTION  1        -->
+    <section class="row">
+        <aside class="col-10"> 
+            <!-- aside flota desno -->
+            <ul class="col-6">
+                <!-- ul flota levo -->
+                <li><a href="">Evropa</a></li>
+                <li><a href="">Azija</a></li>
+                <li><a href="">Afrika</a></li>
+                <li><a href="">Amerika</a></li>
+            </ul>
+        </aside>
+    </section>
+    <!--            SECTION  2        -->
+    <section class="row section2">
+        <div class="ik col-5" >
+            <h3 class="col-1">Informacije</h3>
+            <img class="col-7" src="slike/informacije.jpg" alt="">
+        </div>
+
+        <!--          FORME            -->
+        <div class= "ik col-7">
+            <!-- form float left -->
+            <form class="col-9" action="">
+                <legend>Kontakt</legend>
+
+                <div class="parovi">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Unesite Vas email">
+                </div>
+
+                <div class="parovi">
+                    <label for="text">Tekst poruke</label>
+                    <textarea name="text" id="text" cols="30" rows="10"></textarea>
+                </div>
+                <div id="izuzetak">
+                    <input type="checkbox" name="check" id="check" checked>
+                    <label for="check">prihvatite uslove koriscenja</label>
+                </div>
+                
+                <div class="parovi">
+                    <input type="submit" value="Posaljite">
+                </div>
+
+            </form>
+        </div>
+
+    </section>
+
+
+
+</body>
+</html>
