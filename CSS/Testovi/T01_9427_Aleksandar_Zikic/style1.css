@@ -4,13 +4,103 @@
     padding: 0;
 }
 
-@media only screen and (max-width: 650px) {
 
-    [class*="col-"] {
-        width: 100%;
+
+
+
+[class*="col-"] {
+    width: 100%;
+}
+
+
+
+h1 {
+    padding: 10px 20px;
+    text-align: center;
+    background-color: #FF8C00;
+}
+
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    display: block;
+    padding: 10px 20px;
+    background-color: #FF8C00;
+    color: #000;
+}
+
+ul li a:hover {
+    border: 1px solid #000;
+    background-color: #FFA500;
+    font-weight: bold;
+}
+
+aside p{
+    padding: 20px 20px;
+    color: #FF8C00;
+}
+img:hover {
+    opacity: .5;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.prijava a {
+    text-align: center;
+}
+
+/* FORME */
+
+.forma {
+    margin-bottom: 55px;
+}
+
+form {
+    width: 95%;
+    margin: auto;
+}
+label {
+    display: block;
+    padding: 10px 20px;
+    
+    
+}
+input {
+    padding: 10px 20px;
+    
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+h2 {
+    text-align: center;
+    background-color: #FF8C00;
+    padding: 10px 20px;
+}
+
+
+
+/* Tablet */
+
+@media only screen and (min-width: 601px) and (max-width: 750px) {
+    
+    h1:hover {
+        color: green;
     }
 
-
+    [class*="col-"] {
+        float: left;
+    }
 
     h1 {
         padding: 10px 20px;
@@ -21,6 +111,7 @@
     li {
         list-style: none;
     }
+
     a {
         text-decoration: none;
         display: block;
@@ -35,9 +126,9 @@
         font-weight: bold;
     }
 
-    aside p{
+    aside p {
         padding: 20px 20px;
-        color: #FF8C00;
+        color: green;
     }
 
     .row::after {
@@ -49,8 +140,7 @@
     .prijava a {
         text-align: center;
     }
-
-    /* FORME */
+    /* Forme */
 
     .forma {
         margin-bottom: 55px;
@@ -60,14 +150,17 @@
         width: 95%;
         margin: auto;
     }
+
     label {
         display: block;
         padding: 10px 20px;
-        
-        
+        margin: 10px 0px;
+              
     }
-    input {
+
+    input, textarea {
         padding: 10px 20px;
+        margin: 10px 0px;
         
     }
 
@@ -83,17 +176,45 @@
         padding: 10px 20px;
     }
 
-}
+    
 
-/* Tablet */
 
-@media only screen and (min-width: 650px) and (max-width: 750px) {
-    p {
-        color: green;
-        
+
+    .col-1 {
+        width: 8.33%;
     }
-    h1:hover {
-        color: green;
+    .col-2 {
+        width: 16.66%;
+    }
+    .col-3 {
+        width: 25%;
+    }
+    .col-4 {
+        width: 33.33%;
+    }
+    .col-5 {
+        width: 41.66%;
+    }
+    .col-6 {
+        width: 50%;
+    }
+    .col-7 {
+        width: 58.33%;
+    }
+    .col-8 {
+        width: 66.66%;
+    }
+    .col-9 {
+        width: 75%;
+    }
+    .col-10 {
+        width: 83.33%;
+    }
+    .col-11 {
+        width: 91.66%;
+    }
+    .col-12 {
+        width: 100%;
     }
 
     
@@ -102,7 +223,7 @@
 
 /* Desktop */
 
-@media only screen and (min-width: 750px) {
+@media only screen and (min-width: 751px) {
     [class*="col-"] {
         float: left;
     }
@@ -220,5 +341,5 @@
     }
     .col-12 {
         width: 100%;
-    }
+    } 
 }
