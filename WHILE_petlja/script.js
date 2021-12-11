@@ -225,3 +225,96 @@
 //     console.log(`Cifre broja ${b} su ${b1} i ${b2}.`);   
 // }
 
+//////////////////////////////
+
+// 4. Kreirati n paragrafa sa proizvoljnim tekstom i naizmenično ih obojiti u tri različite boje
+
+// i = 1;
+// p = 20;
+// boja = "";
+// while(i <= p) {
+//     if (boja == "" || boja == "green") {
+//         boja = "red";
+//         document.body.innerHTML +=` <p style="background-color: ${boja};">Hello World</p> `;
+//     }
+//     else if (boja == "red"){
+//         boja = "blue";
+//         document.body.innerHTML +=` <p style="background-color: ${boja};">Hello World</p> `;
+//     }
+//     else if (boja == "blue") {
+//         boja = "green";
+//         document.body.innerHTML +=` <p style="background-color: ${boja};">Hello World</p> `;
+//     }
+//     i++;
+// }
+
+// Drugi nacin
+
+/*
+document.body.innerHTML += "<p style='color: red'>1. paragraf</p>";
+document.body.innerHTML += "<p style='color: purple'>2. paragraf</p>";
+document.body.innerHTML += "<p style='color: green'>3. paragraf</p>";
+document.body.innerHTML += "<p style='color: red'>4. paragraf</p>";
+document.body.innerHTML += "<p style='color: purple'>5. paragraf</p>";
+document.body.innerHTML += "<p style='color: green'>6. paragraf</p>";
+*/
+
+// let n = 20;
+// i = 1;
+
+// while (i <= 20) {
+//     if (i % 3 == 1) {
+//         document.body.innerHTML += `<p style='color: red'>${i} paragraf</p>`;
+//     }
+//     else if(i % 3 == 2) {
+//         document.body.innerHTML += `<p style='color: purple'>${i} paragraf</p>`;
+//     }
+//     else {
+//         document.body.innerHTML += `<p style='color: pink'>${i} paragraf</p>`;
+//     }
+//     i++;
+// }
+
+// let n = 2000;
+// let i = 1;
+
+// while (i <= n) {
+//     if (i % 5 == 1) {
+//         document.body.innerHTML += `<p style='color: red'>${i} paragraf</p>`;
+//     }
+//     else if (i % 5 == 2) {
+//         document.body.innerHTML += `<p style='color: blue'>${i} paragraf</p>`;
+//     }
+//     else if (i % 5 == 3) {
+//         document.body.innerHTML += `<p style='color: green'>${i} paragraf</p>`;
+//     }
+//     else if (i % 5 == 4) {
+//         document.body.innerHTML += `<p style='color: yellow'>${i} paragraf</p>`;
+//     }
+//     else {
+//         document.body.innerHTML += `<p style='color: orange'>${i} paragraf</p>`;
+//     }
+//     i++;
+// }
+
+
+
+// 5. Kreirati n proizvoljnih slika i staviti im naizmenično dva različita okvira
+
+// let i = 1;
+// let s = 20;
+// let b = "";
+
+// while (i <= s) {
+//     if (b == "" || b == "2px dashed black;") {
+//         b = "2px solid red;";
+//     document.body.innerHTML += `<img style="border:${b}" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRm81XoZa9dFFAFPY-LjxgJ-XAj-KeySicSvw&usqp=CAU">`;
+//     }
+//     else{
+//         b = "2px dashed black;";
+//     document.body.innerHTML += `<img style="border:${b}" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRm81XoZa9dFFAFPY-LjxgJ-XAj-KeySicSvw&usqp=CAU">`;
+//     }
+//     i++;
+// }
+
+//
