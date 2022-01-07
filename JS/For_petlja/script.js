@@ -390,6 +390,13 @@
 // } 
 // document.body.innerHTML += spanovi;   
 
+
+
+
+//                            SAH   LAK NACIN
+
+
+
 // let spanovi = ``;
 // for (let i = 1, i2 = 1, div = 8; i2 <= div; i2++) {
 
@@ -428,83 +435,94 @@
 
 
 
-//////////////////////////////// FAIL
 
-// let conc = "";
-// for (let div = 8, i2 = 1, b = 1; i2 <= div; i2++) {
+//                           SAH - TEZI NACIN                 
+
+
+
+
+//
+// let c = 1;
+// let div = 8;                     // 8 div-ova
+// let span = 8;                    // 8 span-ova u jednom div-u 
+// let conc = "";                   // promenljiva kontatenacija
+// for (let i = 1; i <= div; i++){   // petlja za 8 div-ova
     
-
-//     for (let i = 1, span = 1; i <= span; i++) {
-//         if(i == 1){
-//             conc +=`
+//     conc +=`
 //             <div>
-//             <span>${i}</span>
 //             `;
-//         }
-//         if(i == 0){
-//             conc +=`          
-//             <span>${i}</span>
-//             </div>
+//     if (i % 2 == 0){                          // pitamo da li je div parni
+//         for (let i2 = c; i2 <= span; i2++) {  // petlja za 8 span-ova
+//             if (i2 % 2 == 0) {                // pitamo da li je span paran broj 
+//                 conc +=`
+//             <span style="color: #fff; background-color: #000;">${i2}</span>
 //             `;
-//         }
-//         else {
-//             conc +=`
-//             <span>${i}</span>`;
+//             }
+//             else {                             // ako nije paran
+//                 conc +=`
+//             <span>${i2}</span>
+//             `;
+            
+//             }
+            
+            
 //         }
 //     }
-
+//     else {                                    // ako div nije paran
+//         for (let i2 = c; i2 <= span; i2++) {  // petlja za 8 span-ova
+//             if (i2 % 2 != 0) {                // pitamo da li je span neparan broj 
+//                 conc +=`
+//             <span style="color: #fff; background-color: #000;">${i2}</span>
+//             `;
+//             }
+//             else {                             // ako je paran
+//                 conc +=`
+//             <span>${i2}</span>
+//             `;
+            
+//             }
+//         }
+//     }
+//     conc +=`
+//             </div>
+//             `;
+//     c += 8;           // posle svakog ciklusa podizemo brojac za 8
+//     span += 8;        // posle svakog ciklusa podizemo brojac za 8
+                         // da se brojevi od 1-8 ne bi ponavljali 
 // }
 // document.body.innerHTML += conc;
 
-//
-let c = 1;
-let div = 8;
-let span = 8; // 
-let conc = "";
-for (let i = 1; i <= div; i++){
-    
-    conc +=`
-            <div>
-            `;
-    if (i % 2 == 0){
-        for (let i2 = c; i2 <= span; i2++) {
-            if (i2 % 2 == 0) {
-                conc +=`
-            <span style="color: #fff; background-color: #000;">${i2}</span>
-            `;
-            }
-            else {
-                conc +=`
-            <span>${i2}</span>
-            `;
-            
-            }
-            
-            
-        }
-    }
-    else {
-        for (let i2 = c; i2 <= span; i2++) {
-            if (i2 % 2 != 0) {
-                conc +=`
-            <span style="color: #fff; background-color: #000;">${i2}</span>
-            `;
-            }
-            else {
-                conc +=`
-            <span>${i2}</span>
-            `;
-            
-            }
-        }
-    }
-    conc +=`
-            </div>
-            `;
-    c += 8;
-    span += 8;
-}
-document.body.innerHTML += conc;
 
 
 
+
+//                         LEKARI
+
+
+
+
+// Za unet sat početka i sat kraja radnog vremena dva lekara,  
+// ispisati DA ukoliko se smene lekara preklapaju, u suprotnom ispisati NE.
+
+// lekar broj 1
+// let l1p = 7;
+// let l1k = 13;
+
+
+// // lekar broj 2
+// let l2p = 6;
+// let l2k = 12;
+
+
+// // uporediti kraj radnog vremena prvog i pocetak drugog
+// // i obrnuto
+
+// if (l2p >= l1k) {
+//     console.log(`Radno vreme se ne preklapa`);
+// }
+// else if (l1p >= l2k) {
+//     console.log(`Radno vreme se ne preklapa`);
+// }
+// else {
+//     console.log(`Radno vreme se preklapa`);
+// }
