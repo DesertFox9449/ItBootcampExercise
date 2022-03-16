@@ -1,0 +1,26 @@
+* {
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+form {
+    background-color: maroon;
+    color: #fff;
+    margin: auto;
+    width: 50%;
+}
+
+label {
+    display: block;
+    margin: 5px;
+    padding-left: 10px;
+    font-size: 20px;
+    
+}
+input, textarea {
+    margin: 5px;
+    padding-left: 10px;
+    font-size: 20px;
+    width: 80%;
+}
